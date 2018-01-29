@@ -1,0 +1,11 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.card {
+    background: #eeeeee;
+    padding: 1em;
+    margin: 1em;
+    max-width: 640px;
+}
