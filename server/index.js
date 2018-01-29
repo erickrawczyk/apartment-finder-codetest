@@ -1,19 +1,16 @@
 const express = require('express');
 const app = express();
 
-const listingFilter = require(__dirname + '/listing-filter');
-const LISTINGS = require(__dirname + '/listings.json');
+const listingHandler = require(__dirname + '/listing/listing-handler');
 
 const PORT = process.env.PORT || 3000;
 
 // serve static files (parcel bundle and images)
-app.use(express.static(__dirname + '/dist'));
-app.use('/img', express.static(__dirname + '/public/img'));
+app.use(express.static(__dirname + '/../dist'));
+app.use('/img', express.static(__dirname + '/../public/img'));
 
 // define listings api
-app.get('/api/listings', (req, res) => {
-    return res.send(listingFilter(LISTINGS, req.query))
-})
+app.get('/api/listings', listingHandler);
 
 // hey, listen! 🧚‍♀️
 app.listen(PORT, (err) => {
