@@ -64,7 +64,7 @@ For this challenge you will be creating an apartment finder app that consumes a 
 
 
 **Example**  
-GET `/api/listings?bedrooms=1?price=2000&limit=1`
+GET `/api/listings?bedrooms=1&price=2000&limit=1`
 ```json
 [
     {
