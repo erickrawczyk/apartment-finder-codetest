@@ -53,14 +53,14 @@ For this challenge you will be creating an apartment finder app that consumes a 
 #### Response
 | Property | Type |
 |-|-|
-| `"bedrooms"` | `Number` |
-| `"price"` | `Number` |
-| `"bathrooms"` | `Number` |
-| `"address"` | `String` |
-| `"city"` | `String` |
-| `"state"` | `String` |
-| `"building_name"` | `String` |
-| `"image_id"` | `Number` |
+| `bedrooms` | `Number` |
+| `price` | `Number` |
+| `bathrooms` | `Number` |
+| `address` | `String` |
+| `city` | `String` |
+| `state` | `String` |
+| `building_name` | `String` |
+| `image_id` | `Number` |
 
 
 **Example**  
