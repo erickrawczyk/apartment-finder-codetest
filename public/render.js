@@ -13,6 +13,6 @@ export const render = (listings) => {
 
 export const renderError = (err = 'Error processing request') => {
     document.getElementById('root').innerHTML = `
-        <div>Error processing request</div>
+        <div>${err}</div>
     `;
 }
