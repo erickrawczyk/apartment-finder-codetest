@@ -7,7 +7,7 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "start": "nodemon server/index.js --ignore dist/",
+    "start": "nodemon server/index.js --ignore dist/ --ignore public/",
     "watch": "parcel watch public/index.html --public-url /"
   },
   "dependencies": {
