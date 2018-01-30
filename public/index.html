@@ -8,6 +8,68 @@
     <script src="main.js"></script>
 </head>
 <body>
-    <div id="root"></div>
+    <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; bottom: #transparent-sticky-navbar">
+        <nav class="uk-navbar-container" uk-navbar style="position: relative; z-index: 980;">
+            <div class="uk-navbar-left">
+                <ul class="uk-navbar-nav">
+                    <a class="uk-navbar-item uk-logo uk-text-primary" href="/">
+                        <b>Flat</b>Finder
+                    </a>
+                    <div class="uk-navbar-item">
+                        <div id="bedroom-select-form" uk-form-custom="target: > * > span:first-child">
+                            <select id="bedroom-select">
+                                <option value="">Bedrooms...</option>
+                                <option value="0">Studio</option>
+                                <option value="1">1+ beds</option>
+                                <option value="2">2+ beds</option>
+                                <option value="3">3+ beds</option>
+                                <option value="4">4+ beds</option>
+                                <option value="5">5+ beds</option>
+                                <option value="6">6+ beds</option>
+                            </select>
+                            <button class="uk-button uk-button-default" type="button" tabindex="-1">
+                                <span></span>
+                                <span uk-icon="icon: chevron-down"></span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="uk-navbar-item">
+                        <div id="bathroom-select-form" uk-form-custom="target: > * > span:first-child">
+                            <select id="bathroom-select">
+                                <option value="">Bathrooms...</option>
+                                <option value="1">1+ baths</option>
+                                <option value="2">2+ baths</option>
+                                <option value="3">3+ baths</option>
+                                <option value="4">4+ baths</option>
+                            </select>
+                            <button class="uk-button uk-button-default" type="button" tabindex="-1">
+                                <span></span>
+                                <span uk-icon="icon: chevron-down"></span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="uk-navbar-item">
+                        <div class="uk-inline">
+                            <span class="uk-form-icon" uk-icon="icon: tag"></span>
+                            <input id="price" class="uk-input" type="number" min="0" placeholder="PRICE...">
+                        </div>
+                    </div>
+                    <div class="uk-navbar-item">
+                        <button id="search" class="uk-button uk-button-primary">Search</button>
+                    </div>
+                </ul>
+            </div>
+            <div class="uk-navbar-right">
+                <div class="uk-navbar-item">
+                    <button id="reset" class="uk-button uk-button-default">Reset</button>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div id="results"></div>
+
+    <div id="no-results" class="error">No More Results</div>
+    <button id="load-more" class="uk-button uk-button-default">Load More</button>
 </body>
 </html>

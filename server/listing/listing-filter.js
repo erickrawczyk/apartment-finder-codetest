@@ -12,7 +12,7 @@ module.exports = function filterListing(listings, { offset = 0, limit = 10, bedr
         listings = listings.filter(listing => listing.price <= parseInt(price, 10));
     }
 
-    if (listings.length > limit) {
+    if (listings.length > limit - offset) {
         const upperLimit = parseInt(offset, 10) + parseInt(limit, 10);
         const lowerLimit = parseInt(offset, 10);
         listings = listings.slice(lowerLimit, upperLimit);
