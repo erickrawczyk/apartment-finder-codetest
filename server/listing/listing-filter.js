@@ -1,4 +1,6 @@
 module.exports = function filterListing(listings, { offset = 0, limit = 10, bedrooms, bathrooms, price }) {
+    const intLimit = parseInt(limit, 10);
+    const intOffset = parseInt(offset, 10);
     
     if (bedrooms) {
         listings = listings.filter(listing => listing.bedrooms === parseInt(bedrooms, 10));
@@ -12,9 +14,9 @@ module.exports = function filterListing(listings, { offset = 0, limit = 10, bedr
         listings = listings.filter(listing => listing.price <= parseInt(price, 10));
     }
 
-    if (listings.length > limit) {
-        const upperLimit = parseInt(offset, 10) + parseInt(limit, 10);
-        const lowerLimit = parseInt(offset, 10);
+    if (listings.length > intLimit - intOffset) {
+        const upperLimit = intOffset + intLimit
+        const lowerLimit = intOffset;
         listings = listings.slice(lowerLimit, upperLimit);
     }
 

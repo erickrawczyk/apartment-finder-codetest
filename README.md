@@ -7,8 +7,8 @@ For this challenge you will be creating an apartment finder app that consumes a 
 - Once finished, open a pull request with your changes, and notify us via email that your code has been submitted.
 
 ## Prerequisites
-- [Node.js](https://nodejs.org/en/)
-- [Yarn](https://yarnpkg.com/en/docs/install) or npm
+- [Node.js](https://nodejs.org/en/) v8.0+
+- [Yarn](https://yarnpkg.com/en/docs/install) v1.3+ or npm v5.0+
 
 ## Environment
 - `yarn start`
