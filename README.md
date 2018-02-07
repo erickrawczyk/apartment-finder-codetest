@@ -36,6 +36,7 @@ For this challenge you will be creating an apartment finder app that consumes a 
 - While not necessary, you may use React or another library/framework to complete this project
 - You are encouraged to use ES6+ JavaScript. Babel is included in this project, and can be used with `yarn run watch`
 - You may use jQuery or other dependencies
+- You do not need to edit any files in the `/server` folder, but it's not off limits
 
 ## API Documenation
 ### GET `/api/listings`
