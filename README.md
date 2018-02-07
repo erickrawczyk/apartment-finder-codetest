@@ -17,7 +17,7 @@ For this challenge you will be creating an apartment finder app that consumes a 
     - Builds and bundles the contents of the `/public` folder into the `/dist` folder and watches for changes
 
 ## Specifications
-- Read the API documentation section to learn about the apartment listing API
+- Read the [API documentation](#api-documentation) section to learn about the apartment listing API
 - Build a UI that allows users to filter the available apartments. There should be options for:
     - Maximum Price
     - Number of Bedrooms
