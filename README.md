@@ -3,7 +3,7 @@
 For this challenge you will be creating an apartment finder app that consumes a custom api and returns a grid of apartment listings in Ann Arbor, MI. This is a test of basic front end proficiency including HTTP requests, CSS layouts, and JavaScript knowledge.
 
 ## Instructions
-- Clone this repository and complete the challenge according to the specifications below
+- Clone this repository and complete the challenge according to the [specifications](#specifications) below
 - Once finished, open a pull request with your changes, and notify us via email that your code has been submitted
 
 ## Prerequisites
