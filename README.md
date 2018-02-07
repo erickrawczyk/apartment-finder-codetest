@@ -38,7 +38,7 @@ For this challenge you will be creating an apartment finder app that consumes a 
 - You may use jQuery or other dependencies
 - You do not need to edit any files in the `/server` folder, but it's not off limits
 
-## API Documenation
+## API Documentation
 ### GET `/api/listings`
 > returns an array of apartment listings
 
