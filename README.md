@@ -47,7 +47,7 @@ For this challenge you will be creating an apartment finder app that consumes a 
 | `limit` | 10 | The number of results returned  |
 | `offset` | 0 | The number of results to offset |
 | `bedrooms` | | Number of bedrooms |
-| `bathrooms` | | Number of bathrooms |
+| `bathrooms` | | Minimum number of bathrooms |
 | `price` | | Maximum price  |
 
 #### Response
