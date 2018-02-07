@@ -1,10 +1,10 @@
 {
-  "name": "codetest",
+  "name": "ui-code-test",
   "version": "1.0.0",
-  "description": "Deepfield Frontend Code Test",
+  "description": "Deepfield UI Code Test",
   "main": "index.js",
   "author": "Eric Krawczyk",
-  "license": "MIT",
+  "license": "UNLICENSED",
   "private": true,
   "scripts": {
     "start": "nodemon server/index.js --ignore dist/ --ignore public/",

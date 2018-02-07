@@ -12,10 +12,8 @@ app.use('/img', express.static(__dirname + '/../public/img'));
 // define listings api
 app.get('/api/listings', listingHandler);
 
-// hey, listen! 🧚‍♀️
+// hey, listen! 🧚‍
 app.listen(PORT, (err) => {
-    if (err) {
-        return console.error(`Error starting server on port ${PORT}:`, err)
-    }
+    if (err) return console.error(`Error starting server on port ${PORT}:`, err);
     console.log('Server listening on port', PORT);
 });
